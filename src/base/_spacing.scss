@@ -1,0 +1,64 @@
+@for $i from 1 through 5 {
+  .pad-#{$i},
+  .p-#{$i} {
+    padding: $spacing * $i;
+  }
+
+  .pad-x-#{$i},
+  .px-#{$i} {
+    padding-left: $spacing * $i;
+    padding-right: $spacing * $i;
+  }
+
+  .pad-y-#{$i} ,
+  .py-#{$i} {
+    padding-top: $spacing * $i;
+    padding-bottom: $spacing * $i;
+  }
+
+  .pad-top-#{$i} ,
+  .pt-#{$i} {
+    padding-top: $spacing * $i;
+  }
+
+  .pad-bottom-#{$i} ,
+  .pb-#{$i} {
+    padding-bottom: $spacing * $i;
+  }
+
+  .pad-left-#{$i} ,
+  .pl-#{$i} {
+    padding-left: $spacing * $i;
+  }
+
+  .pad-right-#{$i} ,
+  .pr-#{$i} {
+    padding-right: $spacing * $i;
+  }
+
+  .margin-#{$i} ,
+  .m-#{$i} {
+    margin: $spacing * $i;
+  }
+
+  .margin-y-#{$i} ,
+  .my-#{$i} {
+    margin-top: $spacing * $i;
+    margin-bottom: $spacing * $i;
+  }
+
+  .margin-top-#{$i} ,
+  .mt-#{$i} {
+    margin-top: $spacing * $i;
+  }
+
+  .margin-bottom-#{$i} ,
+  .mb-#{$i} {
+    margin-bottom: $spacing * $i;
+  }
+
+  .spacer-#{$i} {
+    width: $spacing * $i;
+    height: 100%;
+  }
+}

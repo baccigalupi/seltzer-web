@@ -1,0 +1,51 @@
+.t-hidden {
+  display: none;
+}
+
+.t-visible {
+  display: block;
+}
+
+.t-size-1-1 {
+  min-width: 100%;
+  max-width: 100%;
+}
+.t-size-1-2 {
+  min-width: 50%;
+  max-width: 50%;
+}
+.t-size-1-3 {
+  min-width: 33.33333%;
+  max-width: 33.33333%;
+}
+.t-size-1-4 {
+  min-width: 25%;
+  max-width: 25%;
+}
+.t-size-1-5 {
+  min-width: 20%;
+  max-width: 20%;
+}
+.t-size-2-3 {
+  min-width: 66.66666%;
+  max-width: 66.66666%;
+}
+.t-size-2-5 {
+  min-width: 40%;
+  max-width: 40%;
+}
+.t-size-3-4 {
+  min-width: 75%;
+  max-width: 75%;
+}
+.t-size-3-5 {
+  min-width: 60%;
+  max-width: 60%;
+}
+.t-size-4-5 {
+  min-width: 80%;
+  max-width: 80%;
+}
+.t-size-stretch {
+  flex-grow: 1;
+}

@@ -1,0 +1,136 @@
+$tablet-break-point: 576px;
+$desktop-break-point: 960px;
+
+// fonts
+$serif-defaults: "Georgia", "Palatino Linotype", Palatino, "Book Antiqua", serif;
+$sans-defaults: "Trebuchet MS", Trebuchet, Tahoma, Geneva, sans-serif;
+
+$custom-headline-font: 'Roboto Slab';
+$custom-body-font: 'KoHo';
+
+$headline-font:   $custom-headline-font, $serif-defaults;
+$body-font:       $sans-defaults;
+$button-font:     $sans-defaults;
+
+$body-font-size: 17px;
+$line-height: 1.4;
+$normal-weight: 300;
+$bold-weight: 600;
+
+// padding and margins
+$spacing: round($body-font-size * 2 / 3);
+
+// COLORS:
+// pallete
+$white:     #FFFFFF;
+$ice-blue:  #ddfcf7;
+$blueblack: #000D47;
+$blackish:  #111829;
+
+$blue-gray: #678FC2;
+$teal:      #39A0A8;
+$leaf:      #3da344;
+$red:       #C66643;
+$gold:      #FF9F1C;
+
+// semantic
+
+$lightest-color: $white;
+$darkest-color:  $blackish;
+
+$neutral-05: mix($lightest-color, $darkest-color, 95%);
+$neutral-10: mix($lightest-color, $darkest-color, 90%);
+$neutral-20: mix($lightest-color, $darkest-color, 80%);
+$neutral-30: mix($lightest-color, $darkest-color, 70%);
+$neutral-40: mix($lightest-color, $darkest-color, 60%);
+$neutral-50: mix($lightest-color, $darkest-color, 50%);
+$neutral-60: mix($lightest-color, $darkest-color, 40%);
+$neutral-70: mix($lightest-color, $darkest-color, 30%);
+$neutral-80: mix($lightest-color, $darkest-color, 20%);
+$neutral-90: mix($lightest-color, $darkest-color, 10%);
+$neutral-95: mix($lightest-color, $darkest-color, 5%);
+
+$primary: $blue-gray;
+$primary-dark:  darken($primary, 15%);
+$primary-light: lighten($primary, 30%);
+$primary-text:       darken(saturate($primary, 50%), 20%);
+$primary-dark-text:  darken(saturate($primary, 70%), 25%);
+$primary-light-text: lighten($primary, 10%);
+
+$secondary: $neutral-50;
+$secondary-dark:  darken($secondary, 15%);
+$secondary-light: lighten($secondary, 30%);
+$secondary-text:       darken(saturate($secondary, 20%), 20%);
+$secondary-dark-text:  darken(saturate($secondary, 20%), 25%);
+$secondary-light-text: lighten($secondary, 10%);
+
+$info: $teal;
+$info-dark:  darken($info, 15%);
+$info-light: lighten($info, 30%);
+$info-text:       darken(saturate($info, 50%), 20%);
+$info-dark-text:  darken(saturate($info, 50%), 30%);
+$info-light-text: lighten($info, 10%);
+
+$success: $leaf;
+$success-dark:  darken($success, 15%);
+$success-light: lighten($success, 30%);
+$success-text:       darken(saturate($success, 80%), 20%);
+$success-dark-text:  darken(saturate($success, 80%), 30%);
+$success-light-text: lighten($success, 10%);
+
+$warning: $gold;
+$warning-dark:  darken($warning, 15%);
+$warning-light: lighten($warning, 30%);
+$warning-text:       darken(saturate($warning, 80%), 25%);
+$warning-dark-text:  darken(saturate($warning, 80%), 35%);
+$warning-light-text: lighten($warning, 10%);
+
+$danger: $red;
+$danger-dark:  darken($danger, 15%);
+$danger-light: lighten($danger, 30%);
+$danger-text:       darken(saturate($danger, 50%), 15%);
+$danger-dark-text:  darken(saturate($danger, 70%), 35%);
+$danger-light-text: lighten($danger, 10%);
+
+$background-color: $lightest-color;
+$header-color: $ice-blue;
+$footer-color: $ice-blue;
+$focus-color: $teal;
+
+$border-radius: 6px;
+$border-color: $neutral-20;
+$border-width: 1px;
+$input-border-width: 2px;
+$input-border-style: solid;
+$button-focus-offset: 3px;
+$link-focus-offset: 3px;
+$focus-width: 10px;
+
+@mixin button-focus-outline() {
+  outline: none;
+  box-shadow: 0 0 $focus-width darken($focus-color, 10%);
+}
+
+@mixin link-focus-outline() {
+  outline: none;
+  box-shadow: 0 0 $focus-width $focus-color;
+}
+
+@mixin inset-border-style($base-color) {
+  border-width: $input-border-width;
+  border-style: solid;
+  border-radius: $border-radius;
+
+  border-color: $base-color;
+  border-top-color: darken($base-color, 30%);
+  border-left-color: darken($base-color, 30%);
+}
+
+@mixin outline-border-style($base-color) {
+  border-width: $input-border-width;
+  border-style: solid;
+  border-radius: $border-radius;
+
+  border-color: $base-color;
+}
+

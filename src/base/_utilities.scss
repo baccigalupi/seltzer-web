@@ -1,0 +1,99 @@
+.overflow {
+  overflow: visible;
+}
+
+.overflow-x {
+  overflow-x: visible;
+}
+
+.overflow-y {
+  overflow-y: visible;
+}
+
+.no-overflow,
+.no-scroll {
+  overflow: hidden;
+}
+
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: $border-radius;
+}
+
+.circular {
+  border-radius: 50%;
+}
+
+
+//.shadow {
+  //@include shadowed;
+//}
+
+.transparent {
+  opacity: 0;
+}
+
+.opaque {
+  opacity: 1;
+}
+
+.border {
+  border-left: $border-width solid $border-color;
+  border-right: $border-width solid $border-color;
+  border-top: $border-width solid $border-color;
+  border-bottom: $border-width solid $border-color;
+}
+
+.border-left {
+  border-left: $border-width solid $border-color;
+}
+
+.border-right {
+  border-right: $border-width solid $border-color;
+}
+
+.border-top {
+  border-top: $border-width solid $border-color;
+}
+
+.border-bottom {
+  border-bottom: $border-width solid $border-color;
+}
+
+.no-border {
+  border: none;
+}
+
+
+// text styles
+.wrap-text {
+  word-break: break-all;
+}
+
+.no-wrap-text {
+  white-space: nowrap;
+}
+
+/* 
+.text-shadow {
+  @include text-shadowed;
+}
+
+.text-shadow-light {
+  @include text-shadowed-light;
+}
+*/
+

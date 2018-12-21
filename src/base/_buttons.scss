@@ -1,0 +1,139 @@
+input[type=submit],
+input[type=reset],
+input[type=button],
+button,
+a.button,
+a.btn {
+  display: inline-block;
+  width: auto;
+  border: none;
+  background-color: $primary-dark;
+  color: $lightest-color;
+
+  padding: $spacing;
+  font-weight: $bold-weight;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: $border-radius;
+
+  text-align: center;
+  white-space: normal;
+  cursor: pointer;
+
+  &:enabled:hover,
+  &:enabled.hover {
+    background-color: lighten($primary-dark, 5%);
+  }
+
+  &:active,
+  &.active {
+    background-color: darken($primary-dark, 10%);
+    @include button-focus-outline();
+  }
+
+  &:focus,
+  &.focus {
+    @include button-focus-outline();
+  }
+
+  &[disabled],
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
+
+  .btn-secondary,
+  &.secondary {
+    background-color: $secondary-light;
+    color: $darkest-color;
+
+    &:enabled:hover,
+    &:enabled.hover {
+      background-color: lighten($secondary-light, 5%);
+    }
+
+    &:focus,
+    &.focus {
+      background-color: lighten($secondary-light, 10%);
+    }
+  }
+
+  .btn-info,
+  &.info {
+    background-color: $info;
+    color: $darkest-color;
+
+    &:enabled:hover,
+    &:enabled.hover {
+      background-color: lighten($info, 5%);
+    }
+
+    &:focus,
+    &.focus {
+      background-color: lighten($info, 10%);
+    }
+  }
+
+  .btn-success,
+  &.success {
+    background-color: $success;
+    color: $darkest-color;
+
+    &:enabled:hover,
+    &.hover {
+      background-color: lighten($success, 5%);
+    }
+
+    &:enabled:focus,
+    &.focus {
+      background-color: lighten($success, 10%);
+    }
+  }
+
+  .btn-warning,
+  &.warning {
+    background-color: $warning;
+    color: $darkest-color;
+
+    &:enabled:hover,
+    &:enabled.hover {
+      background-color: lighten($warning, 5%);
+    }
+
+    &:focus,
+    &.focus {
+      background-color: lighten($warning, 10%);
+    }
+  }
+
+  .btn-danger,
+  &.danger {
+    background-color: $danger;
+    color: $darkest-color;
+
+    &:enabled:hover,
+    &:enabled.hover {
+      background-color: lighten($danger, 5%);
+    }
+
+    &:focus,
+    &.focus {
+      background-color: lighten($danger, 10%);
+    }
+  }
+}
+
+input[type=reset],
+button.neutral,
+.btn.neutral,
+.btn.btn-neutral {
+  background-color: $neutral-60;
+  width: auto;
+
+  &:enabled:hover,
+  &:enabled.hover,
+  &:focus,
+  &.focus {
+    background-color: $neutral-50;
+  }
+}

@@ -1,0 +1,26 @@
+.m-border {
+  border-left: $border-width solid $border-color;
+  border-right: $border-width solid $border-color;
+  border-top: $border-width solid $border-color;
+  border-bottom: $border-width solid $border-color;
+}
+
+.m-border-left {
+  border-left: $border-width solid $border-color;
+}
+
+.m-border-right {
+  border-right: $border-width solid $border-color;
+}
+
+.m-border-top {
+  border-top: $border-width solid $border-color;
+}
+
+.m-border-bottom {
+  border-bottom: $border-width solid $border-color;
+}
+
+.m-no-border {
+  border: none;
+}

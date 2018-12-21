@@ -1,0 +1,26 @@
+.t-border {
+  border-left: $border-width solid $border-color;
+  border-right: $border-width solid $border-color;
+  border-top: $border-width solid $border-color;
+  border-bottom: $border-width solid $border-color;
+}
+
+.t-border-left {
+  border-left: $border-width solid $border-color;
+}
+
+.t-border-right {
+  border-right: $border-width solid $border-color;
+}
+
+.t-border-top {
+  border-top: $border-width solid $border-color;
+}
+
+.t-border-bottom {
+  border-bottom: $border-width solid $border-color;
+}
+
+.t-no-border {
+  border: none;
+}

@@ -1,0 +1,62 @@
+@for $i from 0 through 5 {
+  .t-pad-#{$i},
+  .t-p-#{$i} {
+    padding: $spacing * $i;
+  }
+
+  .t-pad-x-#{$i},
+  .t-px-#{$i} {
+    padding-left: $spacing * $i;
+    padding-right: $spacing * $i;
+  }
+
+  .t-pad-y-#{$i} ,
+  .t-py-#{$i} {
+    padding-top: $spacing * $i;
+    padding-bottom: $spacing * $i;
+  }
+
+  .t-pad-top-#{$i} ,
+  .t-pt-#{$i} {
+    padding-top: $spacing * $i;
+  }
+
+  .t-pad-bottom-#{$i} ,
+  .t-pb-#{$i} {
+    padding-bottom: $spacing * $i;
+  }
+
+  .t-pad-left-#{$i} ,
+  .t-pl-#{$i} {
+    padding-left: $spacing * $i;
+  }
+
+  .t-pad-right-#{$i} ,
+  .t-pr-#{$i} {
+    padding-right: $spacing * $i;
+  }
+
+  .t-margin-#{$i} {
+    margin: $spacing * $i;
+  }
+
+  .t-margin-y-#{$i} {
+    margin-top: $spacing * $i;
+    margin-bottom: $spacing * $i;
+  }
+
+  .t-margin-top-#{$i} {
+    margin-top: $spacing * $i;
+  }
+
+  .t-margin-bottom-#{$i} {
+    margin-bottom: $spacing * $i;
+  }
+
+  .t-spacer-#{$i} {
+    width: $spacing * $i;
+    height: 100%;
+  }
+}
+
+

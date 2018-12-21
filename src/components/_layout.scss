@@ -1,0 +1,33 @@
+html {
+  //background-color: $background-color;
+  display: grid;
+  align-items: stretch;
+  height: 100vh;
+}
+
+body {
+  background: transparent url('images/binding-light.png') repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  background: transparent url('images/binding-light.png') repeat;
+  background-color: $header-color;
+}
+
+footer, .footer {
+  background-color: $footer-color;
+}
+
+.content {
+  padding: $spacing;
+  flex: 1;
+}
+
+.nav ul,
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

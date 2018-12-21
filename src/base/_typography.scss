@@ -1,0 +1,97 @@
+body {
+  color: $darkest-color;
+
+  a:focus,
+  a.focus {
+    @include link-focus-outline();
+  }
+}
+
+p, body {
+  font-family: $body-font;
+  font-size: $body-font-size;
+  line-height: $line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headline-font;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  padding-bottom: $spacing;
+  padding-top: $spacing / 2;
+}
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: $normal-weight;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: $normal-weight;
+}
+
+h3 {
+  font-size: 1.45rem;
+  font-weight: $bold-weight;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: $bold-weight;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: $bold-weight;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: $bold-weight;
+}
+
+hr {
+  margin-top: 1 * $spacing;
+  margin-bottom: 1 * $spacing;
+  border: 0;
+  background-color: $neutral-20;
+  height: 1px;
+}
+
+b,
+.text-bold {
+  font-weight: $bold-weight;
+}
+
+em,
+.text-italic {
+  font-style: italic;
+}
+
+small,
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: $primary-text;
+  &:hover,
+  &:active {
+    color: $primary-dark-text;
+  }
+}
+
+a:visited {
+  color: $secondary-text;
+  &:hover,
+  &:active {
+    color: $secondary-dark-text;
+  }
+}
