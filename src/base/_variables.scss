@@ -23,11 +23,8 @@ $spacing: round($body-font-size * 2 / 3);
 // COLORS:
 // pallete
 $white:     #FFFFFF;
-$ice-blue:  #ddfcf7;
-$blueblack: #000D47;
-$blackish:  #111829;
+$black:     #000;
 
-$blue-gray: #678FC2;
 $teal:      #39A0A8;
 $leaf:      #3da344;
 $red:       #C66643;
@@ -36,7 +33,7 @@ $gold:      #FF9F1C;
 // semantic
 
 $lightest-color: $white;
-$darkest-color:  $blackish;
+$darkest-color:  $black;
 
 $neutral-05: mix($lightest-color, $darkest-color, 95%);
 $neutral-10: mix($lightest-color, $darkest-color, 90%);
@@ -50,7 +47,7 @@ $neutral-80: mix($lightest-color, $darkest-color, 20%);
 $neutral-90: mix($lightest-color, $darkest-color, 10%);
 $neutral-95: mix($lightest-color, $darkest-color, 5%);
 
-$primary: $blue-gray;
+$primary: $neutral-50;
 $primary-dark:  darken($primary, 15%);
 $primary-light: lighten($primary, 30%);
 $primary-text:       darken(saturate($primary, 50%), 20%);
@@ -93,8 +90,6 @@ $danger-dark-text:  darken(saturate($danger, 70%), 35%);
 $danger-light-text: lighten($danger, 10%);
 
 $background-color: $lightest-color;
-$header-color: $ice-blue;
-$footer-color: $ice-blue;
 $focus-color: $teal;
 
 $border-radius: 6px;
@@ -132,5 +127,9 @@ $focus-width: 10px;
   border-radius: $border-radius;
 
   border-color: $base-color;
+}
+
+@mixin background-shadow($base-color) {
+  box-shadow: $spacing $spacing $spacing $base-color;
 }
 

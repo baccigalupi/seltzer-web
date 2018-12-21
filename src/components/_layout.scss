@@ -1,28 +1,36 @@
 html {
-  //background-color: $background-color;
   display: grid;
   align-items: stretch;
   height: 100vh;
 }
 
 body {
-  background: transparent url('images/binding-light.png') repeat;
+  background: transparent url('images/cloth.png') repeat;
   display: flex;
   flex-direction: column;
 }
 
-#header {
-  background: transparent url('images/binding-light.png') repeat;
-  background-color: $header-color;
+#page-header {
+  background: transparent url('images/binding_light.png') repeat;
+  box-shadow: 0px 3px 10px transparentize($darkest-color, 0.5);
+  position: relative; // to get the shadow atop the rest of the page
 }
 
-footer, .footer {
-  background-color: $footer-color;
+#page-footer {
+  background: transparent url('images/binding_light.png') repeat;
 }
 
-.content {
-  padding: $spacing;
+#page {
   flex: 1;
+}
+
+.application-width {
+  width: $desktop-break-point;
+}
+
+#content {
+  box-shadow: 0px 0px 10px transparentize($darkest-color, 0.5);
+  min-height: 500px;
 }
 
 .nav ul,
