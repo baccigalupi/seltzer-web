@@ -24,8 +24,17 @@
   position: relative;
 }
 
+.float {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 .margin-auto {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .block {
@@ -102,6 +111,10 @@
 
 .no-wrap-text {
   white-space: nowrap;
+}
+
+.centered {
+  text-align: center;
 }
 
 /* 

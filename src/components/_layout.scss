@@ -33,6 +33,11 @@ body {
   min-height: 500px;
 }
 
+.saucer {
+  background-color: #c9e6ef;
+  box-shadow: inset 0px 0px 5px transparentize($darkest-color, 0.5);
+}
+
 .nav ul,
 nav ul {
   margin: 0;

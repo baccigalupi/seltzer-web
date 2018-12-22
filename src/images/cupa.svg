@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="261px" height="314px" viewBox="0 0 261 314" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="97.2005208%" y1="31.0394815%" x2="4.83217593%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F9F9F9" offset="0%"></stop>
+            <stop stop-color="#E9E9E9" offset="68.8109646%"></stop>
+            <stop stop-color="#CDCDCD" offset="80.9000181%"></stop>
+            <stop stop-color="#F2F2F2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="38.3336243%" y1="0%" x2="61.0597067%" y2="71.3680186%" id="linearGradient-2">
+            <stop stop-color="#E9E9E9" offset="0%"></stop>
+            <stop stop-color="#8D8D8D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#F7F7F7" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="31.0038837%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="59.6011513%" id="linearGradient-4">
+            <stop stop-color="#CECECE" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="32.2411152%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#ECECEC" offset="0%"></stop>
+            <stop stop-color="#8D8D8D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(3.000000, 3.000000)">
+            <path d="M19,147.412188 L38.6132813,289.445312 C55.6445313,301.815104 85.7877604,308 129.042969,308 C172.298177,308 201.283854,301.481771 216,288.445312 L235,147.412188 L19,147.412188 Z" id="Path-3" fill-opacity="0.7" fill="url(#linearGradient-1)"></path>
+            <ellipse id="Oval-Copy" stroke="url(#linearGradient-2)" stroke-width="5" cx="126.5" cy="284.5" rx="89.5" ry="23.5"></ellipse>
+            <path d="M0,34 L38.6132812,289.445312" id="Path-2" stroke="url(#linearGradient-3)" stroke-width="5"></path>
+            <path d="M216.226563,34 L255.226563,284.5" id="Path-2-Copy" stroke="#8D8D8D" stroke-width="5" transform="translate(235.613281, 159.000000) scale(-1, 1) translate(-235.613281, -159.000000) "></path>
+            <ellipse id="Oval" fill="url(#linearGradient-4)" cx="127" cy="147.5" rx="108" ry="28.5"></ellipse>
+            <ellipse id="Oval" stroke="url(#linearGradient-5)" stroke-width="5" cx="127.5" cy="34" rx="127.5" ry="34"></ellipse>
+        </g>
+    </g>
+</svg>
