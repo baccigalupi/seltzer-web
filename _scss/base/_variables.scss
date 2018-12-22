@@ -25,10 +25,10 @@ $spacing: round($body-font-size * 2 / 3);
 $white:     #FFFFFF;
 $black:     #000;
 
-$teal:      #39A0A8;
-$leaf:      #3da344;
-$red:       #C66643;
-$gold:      #FF9F1C;
+$blue-gray: #4A5B72;
+$leaf:      #568B56;
+$red:       #AD6B6B;
+$gold:      #AD946B;
 
 // semantic
 
@@ -47,21 +47,21 @@ $neutral-80: mix($lightest-color, $darkest-color, 20%);
 $neutral-90: mix($lightest-color, $darkest-color, 10%);
 $neutral-95: mix($lightest-color, $darkest-color, 5%);
 
-$primary: $neutral-50;
-$primary-dark:  darken($primary, 15%);
-$primary-light: lighten($primary, 30%);
-$primary-text:       darken(saturate($primary, 50%), 20%);
-$primary-dark-text:  darken(saturate($primary, 70%), 25%);
-$primary-light-text: lighten($primary, 10%);
+$primary: $blue-gray;
+$primary-dark:        darken($primary, 10%);
+$primary-light:       lighten($primary, 10%);
+$primary-text:        $primary;
+$primary-dark-text:   darken($primary, 15%);
+$primary-light-text:  lighten($primary, 10%);
 
 $secondary: $neutral-50;
 $secondary-dark:  darken($secondary, 15%);
 $secondary-light: lighten($secondary, 30%);
-$secondary-text:       darken(saturate($secondary, 20%), 20%);
-$secondary-dark-text:  darken(saturate($secondary, 20%), 25%);
+$secondary-text:       darken($secondary, 20%);
+$secondary-dark-text:  darken($secondary, 20%);
 $secondary-light-text: lighten($secondary, 10%);
 
-$info: $teal;
+$info: $blue-gray;
 $info-dark:  darken($info, 15%);
 $info-light: lighten($info, 30%);
 $info-text:       darken(saturate($info, 50%), 20%);
@@ -90,7 +90,7 @@ $danger-dark-text:  darken(saturate($danger, 70%), 35%);
 $danger-light-text: lighten($danger, 10%);
 
 $background-color: $lightest-color;
-$focus-color: $teal;
+$focus-color: $primary-light;
 
 $border-radius: 6px;
 $border-color: $neutral-20;
@@ -107,8 +107,8 @@ $focus-width: 10px;
 }
 
 @mixin link-focus-outline() {
-  outline: none;
-  box-shadow: 0 0 $focus-width $focus-color;
+  outline: 1px dashed $focus-color;
+  outline-offset: 2px;
 }
 
 @mixin inset-border-style($base-color) {
