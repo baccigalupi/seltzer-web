@@ -4,8 +4,8 @@
   "description": "Lightweight scss kit for styling in modern browsers",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/eleventy & node_modules/.bin/webpack",
-    "build:web": "node_modules/.bin/eleventy --watch",
+    "build": "node_modules/.bin/eleventy --input=_pages & node_modules/.bin/webpack",
+    "build:web": "node_modules/.bin/eleventy --watch --input=_pages",
     "build:css": "node_modules/.bin/webpack --watch",
     "dev": "node_modules/.bin/concurrently \"npm run build:web\" \"npm run build:css\" \"npm run start\"",
     "start": "node_modules/.bin/eleventy --serve --port=${PORT-3000}"

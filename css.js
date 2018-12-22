@@ -1,1 +1,1 @@
-import CSS from './src/seltzer.scss'
+import CSS from './_scss/seltzer.scss'
