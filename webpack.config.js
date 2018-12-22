@@ -5,7 +5,7 @@ let config = {
   mode: 'development',
   entry: './css.js',
   output: {
-    path: path.resolve('./dist'),
+    path: path.resolve('./_site'),
     filename: 'seltzer.js'
   },
   module: {
