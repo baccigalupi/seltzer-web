@@ -6,14 +6,14 @@ $serif-defaults: "Georgia", "Palatino Linotype", Palatino, "Book Antiqua", serif
 $sans-defaults: "Trebuchet MS", Trebuchet, Tahoma, Geneva, sans-serif;
 
 $custom-headline-font: 'Roboto Slab';
-$custom-body-font: 'KoHo';
+$custom-body-font: 'Josefin Slab';
 
 $headline-font:   $custom-headline-font, $serif-defaults;
-$body-font:       $sans-defaults;
+$body-font:       $custom-body-font, $sans-defaults;
 $button-font:     $sans-defaults;
 
-$body-font-size: 17px;
-$line-height: 1.4;
+$body-font-size: 20px;
+$line-height: 1.6;
 $normal-weight: 300;
 $bold-weight: 600;
 

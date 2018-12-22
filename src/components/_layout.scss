@@ -26,6 +26,8 @@ body {
 
 .application-width {
   width: $desktop-break-point;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #content {
@@ -34,8 +36,14 @@ body {
 }
 
 .saucer {
-  background-color: #c9e6ef;
+  background: transparent url('images/binding_light.png') repeat;;
+  height: 200px;
+  width: 200px;
   box-shadow: inset 0px 0px 5px transparentize($darkest-color, 0.5);
+
+  img {
+    width: 100px;
+  }
 }
 
 .nav ul,
